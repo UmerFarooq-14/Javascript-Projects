@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./assets/background.avif") no-repeat fixed ;
+    background-size: cover;
+}
+
+.main-container {
+    width: 340px;
+    height: 500px;
+    padding: 20px;
+    background-color: #727070;
+    border: 1px solid #717377;
+    border-radius: 16px;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+}
+
+.main-container input {
+    width: 90%;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+    text-align: right;
+    font-size: 32px;
+    color: #666;
+    background-color: #FFF;
+    box-shadow: inset 0px 0px 10px #030303, inset 0px -20px 1px rgba(150, 150, 150, .2);
+}
+
+.main-container button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 4px;
+    color: #181818;
+    text-shadow: 1px 1px 0px #FFF;
+    background-color: #EBEBEB;
+    font-size: 24px;
+    outline: none;
+    box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #DCDCDC;
+    border-top: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+    border-bottom: 2px solid #C1C1C1;
+    border-left: 2px solid #C1C1C1;
+}
+
+.main-container .operator {
+
+    color: #FFF;
+    text-shadow: -1px -1px 0px #44006F;
+    background-color: #434343;
+    border: 2px solid #181818;
+    box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #2E2E2E;
+
+
+}
