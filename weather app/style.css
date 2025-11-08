@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(26, 25, 25);
+    height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    height: 450px;
+    width: 350px;
+    background: linear-gradient(158deg, rgba(72, 218, 178, 1) 12%, rgba(67, 78, 110, 1) 100%);
+    border: none;
+    border-radius: 10px;
+
+}
+
+.input-field {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.input-field input {
+    margin: 10px;
+    padding: 15px;
+    width: 230px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    background-color: #EBFDFB;
+    font-size: 18px;
+    color: rgb(20, 20, 20);
+}
+
+.input-field button img {
+    width: 16px;
+    height: 16px;
+}
+
+.input-field button {
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #EBFDFB;
+
+}
+
+.weather-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-section .icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.weather-section .temperature {
+    color: #ffffff;
+}
+
+.temperature h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.temperature h1 sup {
+    font-size: 24px;
+}
+
+.temperature h3 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.weather-wind {
+    display: flex;
+    gap: 30px;
+    margin: 40px;
+}
+
+.weather-wind img {
+    width: 30px;
+    height: 30px;
+}
+
+.humidity,
+.wind {
+    display: flex;
+    gap: 5px;
+    color: #ffffff;
+}
+
+.no {
+    font-size: 20px;
+}
