@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+    
+    <div class="main-container">
+        <h1 class="game-title">🐍 Neon Snake</h1>
+        <h1 class="highest-score"></h1>
+        <h2 class="score"></h2>
+
+        <div class="board"></div>
+        <div class="btns">
+            <button class="restart-btn" id="restartBtn">Restart</button>
+            <button class="music-btn" id="puasebtn">▶ Music</button>
+        </div>
+        <audio src="music/music.mp3" id="bgmusic"></audio>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

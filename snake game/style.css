@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, #0f0f0f, #000);
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+.main-container {
+    text-align: center;
+    background: rgba(20, 20, 20, 0.85);
+    padding: 25px 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #0ff2, inset 0 0 10px #0ff2;
+    backdrop-filter: blur(10px);
+}
+
+.game-title {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.highest-score,
+.score {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-shadow: 0 0 8px #0ff;
+}
+
+.board {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(145deg, #111, #1a1a1a);
+    border: 2px solid #0ff;
+    box-shadow: 0 0 20px #0ff4;
+    margin: 0 auto 20px;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+.head {
+    background: linear-gradient(145deg, #00ffff, #80ffff);
+    box-shadow: 0 0 12px #00ffff, 0 0 25px #00ffff;
+    border-radius: 6px;
+    transform: scale(1.05);
+}
+
+.tail {
+    background: linear-gradient(145deg, #009999, #00cccc);
+    box-shadow: 0 0 6px #00cccc, 0 0 12px #00cccc;
+    border-radius: 4px;
+    opacity: 0.9;
+}
+
+.food {
+    background: #ff006e;
+    box-shadow: 0 0 10px #ff006e, 0 0 20px #ff006e;
+    border-radius: 50%;
+}
+
+.restart-btn,.music-btn {
+    background: #0ff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 0 10px #0ff, inset 0 0 10px #0ff;
+}
+ .music-btn{
+    padding: 8px 20px;
+    margin-left: 5px;
+ }
+
+.restart-btn:hover, .music-btn:hover {
+    background: #000;
+    color: #0ff;
+    box-shadow: 0 0 15px #0ff, inset 0 0 15px #0ff;
+    transform: scale(1.05);
+}
+
+/* ---------- SWEETALERT NEON THEME ---------- */
+.swal2-popup {
+    height: 300px;
+    width: 400px;
+    background: rgba(15, 15, 15, 0.9) !important;
+    border: 2px solid #0ff !important;
+    box-shadow: 0 0 25px #0ff8, 0 0 50px #0ff3, inset 0 0 10px #0ff5;
+    border-radius: 20px !important;
+    backdrop-filter: blur(10px);
+    color: #fff !important;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0 0 10px #0ff8;
+}
+
+.swal2-title {
+    color: #0ff !important;
+    text-shadow: 0 0 12px #0ff, 0 0 25px #0ff;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+.swal2-html-container {
+    color: #e0ffff !important;
+    font-size: 1.3rem;
+    text-shadow: 0 0 8px #0ff3;
+}
+
+.swal2-confirm,
+.swal2-cancel {
+    border-radius: 10px !important;
+    background: #0ff !important;
+    color: #000 !important;
+    font-weight: 600 !important;
+    border: none !important;
+    box-shadow: 0 0 15px #0ff, inset 0 0 10px #0ff3 !important;
+    transition: all 0.3s ease !important;
+}
+
+.swal2-confirm:hover,
+.swal2-cancel:hover {
+    background: #000 !important;
+    color: #0ff !important;
+    box-shadow: 0 0 20px #0ff, inset 0 0 15px #0ff;
+    transform: scale(1.05);
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 20px;
+        width: 95%;
+    }
+
+    .game-title {
+        font-size: 1.8rem;
+    }
+
+    .highest-score,
+    .score {
+        font-size: 1rem;
+    }
+
+    .restart-btn,.music-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .swal2-popup {
+        height: 250px;
+        width: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        padding: 15px;
+    }
+
+    .game-title {
+        font-size: 1.6rem;
+    }
+
+    .highest-score,
+    .score {
+        font-size: 0.9rem;
+    }
+
+    .board {
+        width: 300px;
+        height: 300px;
+    }
+
+    .restart-btn,.music-btn {
+        font-size: 0.85rem;
+        padding: 7px 14px;
+    }
+}
