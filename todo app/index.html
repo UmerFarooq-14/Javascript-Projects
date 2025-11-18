@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Add Todo</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="brand">
+                <div class="logo">✓</div>
+                <div>
+                    <h1 class="title">Todo</h1>
+                    <div class="meta">focus on what matters</div>
+                </div>
+            </div>
+            <div class="meta" id="date"> </div>
+        </div>
+
+        <div class="hero-section">
+            <div class="input-wrapper">
+                <input type="text" placeholder="Add a new task..." id="input">
+                <button id="add-btn">Add Task</button>
+            </div>
+        </div>
+
+        <div class="list-section">
+            <div class="headings">
+                <div>
+                    <h2>Task Name</h2>
+                </div>
+                <div class="subheadings">
+                    <h2>Status</h2>
+                    <h2>Action</h2>
+                </div>
+            </div>
+            <div id="task" class="task"></div>
+
+        </div>
+    </div>
+
+
+    <script src="app.js" type="module"></script>
+
+</body>
+
+</html>
